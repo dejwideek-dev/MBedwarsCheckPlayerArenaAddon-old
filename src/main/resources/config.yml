@@ -1,0 +1,18 @@
+#Check Player Arena Addon for MBedwars by dejwideek
+
+#Don't change this!
+config-version: 1
+
+#Permission for /checkarena command
+Permission: "bw.checkplayerarena"
+
+Messages:
+  Usage: "&cUsage: /checkarena <player>"
+  Not-Found: "&cThis player isn't online!"
+  No-Inside-Arena: "&cThis player isn't playing!"
+
+  #Available placeholder: %permission%
+  No-Permission: "&cYou must have permission &4%permission% &cto do this!"
+
+  #Available placeholders: %player%, %arena%
+  Arena-Info: "&6%player% &eis playing on &c%arena%"

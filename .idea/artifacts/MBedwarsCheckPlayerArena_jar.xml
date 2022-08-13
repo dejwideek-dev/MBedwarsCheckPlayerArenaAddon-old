@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="MBedwarsCheckPlayerArena:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/MBedwarsCheckPlayerArena_jar</output-path>
+    <root id="archive" name="MBedwarsCheckPlayerArena.jar">
+      <element id="module-output" name="MBedwarsCheckPlayerArena" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/dev/dejvokep/boosted-yaml/1.0/boosted-yaml-1.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
