@@ -8,7 +8,6 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.jetbrains.annotations.NotNull;
 
 @SuppressWarnings("ALL")
 public class CheckCommand implements CommandExecutor {
@@ -20,7 +19,7 @@ public class CheckCommand implements CommandExecutor {
     }
 
     @Override
-    public boolean onCommand(@NotNull CommandSender commandSender, @NotNull Command command, @NotNull String s, @NotNull String[] strings) {
+    public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
 
         BedwarsAPI.onReady(() -> {
             if(commandSender instanceof Player) {

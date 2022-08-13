@@ -4,7 +4,7 @@
 config-version: 1
 
 #Permission for /checkarena command
-Permission: "bw.checkarena"
+Permission: "bw.checkplayerarena"
 
 Messages:
   Usage: "&cUsage: /checkarena <player>"

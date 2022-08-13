@@ -1,5 +1,5 @@
-name: MBedwarsCheckPlayerArena
-version: 1.0
+name: MBedwarsCheckPlayerArenaAddon
+version: 1.0.0
 authors: [dejwideek]
 depend: [MBedwars]
 main: pl.dejwideek.mbwcheckplayerarena.CheckPlayerAddon
