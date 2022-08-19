@@ -1,4 +1,4 @@
-package pl.dejwideek.mbwcheckplayerarena;
+package pl.dejwideek.mbwcheckplayerarena.commands;
 
 import de.marcely.bedwars.api.BedwarsAPI;
 import de.marcely.bedwars.api.arena.Arena;
@@ -8,6 +8,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import pl.dejwideek.mbwcheckplayerarena.CheckPlayerAddon;
 
 @SuppressWarnings("ALL")
 public class CheckCommand implements CommandExecutor {
@@ -25,7 +26,7 @@ public class CheckCommand implements CommandExecutor {
             if(commandSender instanceof Player) {
                 Player p = (Player) commandSender;
 
-                if(p.hasPermission(plugin.config.getString("Permission"))) {
+                if(p.hasPermission(plugin.config.getString("Permissions.Check"))) {
                     if(strings.length == 0) {
                         p.sendMessage(ChatColor.translateAlternateColorCodes('&', plugin.config.getString("Messages.Usage")));
                         return;
@@ -52,7 +53,7 @@ public class CheckCommand implements CommandExecutor {
                 }
                 else {
                     p.sendMessage(ChatColor.translateAlternateColorCodes('&', plugin.config.getString("Messages.No-Permission")
-                            .replaceAll("%permission%", plugin.config.getString("Permission"))));
+                            .replaceAll("%permission%", plugin.config.getString("Permissions.Check"))));
                     return;
                 }
             }

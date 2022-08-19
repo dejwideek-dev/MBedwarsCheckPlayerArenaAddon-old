@@ -1,5 +1,5 @@
 name: MBedwarsCheckPlayerArenaAddon
-version: 1.0.0
+version: 1.0.1
 authors: [dejwideek]
 depend: [MBedwars]
 main: pl.dejwideek.mbwcheckplayerarena.CheckPlayerAddon
@@ -11,3 +11,9 @@ commands:
       - checkarenaplayer
       - checkplayerarena
     description: Check player arena
+  checkarenareload:
+    aliases:
+      - checkplayerarenareload
+      - cpreload
+      - cpareload
+    description: Reload config file
