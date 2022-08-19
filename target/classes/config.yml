@@ -3,9 +3,12 @@
 #Don't change this!
 config-version: 1
 
-#Permission for /checkarena command
-Permission: "bw.checkplayerarena"
+#Permissions
+Permissions:
+  Check: "bw.checkplayerarena"
+  Reload: "bw.checkplayerarena.reload"
 
+#Messages
 Messages:
   Usage: "&cUsage: /checkarena <player>"
   Not-Found: "&cThis player isn't online!"
@@ -16,3 +19,5 @@ Messages:
 
   #Available placeholders: %player%, %arena%
   Arena-Info: "&6%player% &eis playing on &c%arena%"
+
+  Reloaded: "&eSuccessfully reloaded configuration file!"
