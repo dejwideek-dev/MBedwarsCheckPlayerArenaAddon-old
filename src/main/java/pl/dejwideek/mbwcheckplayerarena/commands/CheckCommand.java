@@ -1,8 +1,9 @@
 package pl.dejwideek.mbwcheckplayerarena.commands;
 
 import de.marcely.bedwars.api.BedwarsAPI;
-import de.marcely.bedwars.api.arena.Arena;
-import org.bukkit.Bukkit;
+import de.marcely.bedwars.api.remote.RemoteAPI;
+import de.marcely.bedwars.api.remote.RemoteArena;
+import de.marcely.bedwars.api.remote.RemotePlayer;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -32,10 +33,10 @@ public class CheckCommand implements CommandExecutor {
                         return;
                     }
                     if(strings.length >= 1) {
-                        Player target = Bukkit.getPlayer(strings[0]);
+                        RemotePlayer target = RemoteAPI.get().getOnlinePlayer(strings[0]);
 
                         if(target != null) {
-                            Arena a = BedwarsAPI.getGameAPI().getArenaByPlayer(target);
+                            RemoteArena a = RemoteAPI.get().getArenaByPlayingPlayer(target);
 
                             if(a != null) {
                                 p.sendMessage(ChatColor.translateAlternateColorCodes('&', plugin.config.getString("Messages.Arena-Info")
