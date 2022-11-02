@@ -7,7 +7,7 @@ Simple addon for [MBedwars](https://mbedwars.com/product/marcelys-bedwars). You 
 
 Supported version: 1.8.x-1.19.x
 
-Required MBedwars version: 5.0 or higher
+Required MBedwars version: for **1.0** 5.0 or higher, for **1.1+** 5.0.14 or higher
 
 
 
